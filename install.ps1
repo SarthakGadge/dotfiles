@@ -1,4 +1,9 @@
 # Run this script as Administrator to link your dotfiles
+winget install Starship.Starship
+winget install AmN.yasb
+winget install LGUG2Z.komorebi
+
+
 $DOTFILES = "$HOME\dotfiles"
 
 $links = @{
@@ -8,6 +13,7 @@ $links = @{
     "$DOTFILES\starship\starship.toml"      = "$HOME\.config\starship.toml"
     "$DOTFILES\yasb\config.yaml"            = "$HOME\.yasb\config.yaml"
     "$DOTFILES\yasb\styles.css"             = "$HOME\.yasb\styles.css"
+    "$DOTFILES\whkdrc\whkdrc"             = "$HOME\.config\whkdrc"
 }
 
 Write-Host "Starting Symlink process..." -ForegroundColor Cyan
