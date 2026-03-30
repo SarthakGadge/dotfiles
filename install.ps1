@@ -1,7 +1,7 @@
 # Run this script as Administrator to link your dotfiles
-winget install Starship.Starship
-winget install AmN.yasb
-winget install LGUG2Z.komorebi
+winget install Starship.Starship --silent
+winget install AmN.yasb --silent
+winget install LGUG2Z.komorebi --silent
 
 
 $DOTFILES = "$HOME\dotfiles"
@@ -39,4 +39,4 @@ $links.GetEnumerator() | ForEach-Object {
     Write-Host "Linked $dest -> $source" -ForegroundColor Green
 }
 
-Write-Host "Setup Complete!" -ForegroundColor Magentax
+Write-Host "Setup Complete!" -ForegroundColor Magenta
