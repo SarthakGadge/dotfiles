@@ -1,0 +1,220 @@
+* {
+        font-size: 12px;
+        color: #bec8e7;
+        font-weight: 500;
+        font-family: "JetBrainsMono Nerd Font";
+        margin: 0;
+        padding: 0;
+        border-radius: 20;
+}
+
+.yasb-bar {
+        padding: 0;
+        margin: 0;
+        border-radius: 10px;
+        margin: 3px 5px 0 5px;
+        border-color: #515b83;
+        background-color: rgba(10, 10, 12, 0.75);
+        border: 1px solid rgba(255, 0, 60, 0.15);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.widget {
+        padding: 0 8px;
+        margin: 0 4px;
+}
+.widget .label {
+        padding: 0px 2px;
+}
+.widget .label.alt {
+        padding: 0px 8px;
+}
+.active-window-widget {
+        background-color: rgba(20, 20, 25, 0.7);
+        border: 1px solid rgba(255, 0, 60, 0.15);
+        margin-top: 3;
+        margin-bottom: 3;
+        border-radius: 18px;
+        margin-left: 8px;
+        border-radius: 10px;
+        max-width: 320px;
+}
+
+.active-window-widget .label{
+        color: #ffffff;
+    min-width: 0;
+}
+
+.active-window-widget .icon {
+        min-width: 16px;
+}
+
+.komorebi-workspaces .ws-btn {
+        font-size: 14px;
+    border: none;
+    color: #6b7280;
+        margin: 0 1px 0 1px;
+    height: 30px;
+    padding: 0 12px;
+    border-bottom: 1px solid #6c7086;
+}
+.komorebi-workspaces .ws-btn:hover {
+    color: #7f849c;
+    border-bottom: 1px solid #7f849c;
+}
+.komorebi-workspaces .ws-btn.populated {
+        color: #b4befe;
+}
+.komorebi-workspaces .ws-btn.active {
+    color: #e63946;
+    font-weight: 900;
+    width: 30px;
+}
+.uptime {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: rgba(191, 202, 219, 0.726);
+        font-weight: 600;
+        font-family: "FiraCode Nerd Font Mono";
+}
+.power-menu-widget .label {
+        color: #ff0000;
+        font-size: 13px;
+}
+.power-menu-popup {
+        background-color: rgba(24, 24, 37, 0.9);
+        border-radius: 12px;
+        border: 4px solid rgb(41, 42, 58);
+}
+.power-menu-popup .button {
+        padding: 0;
+        width: 240px;
+        height: 120px;
+        border-radius: 8px;
+        background-color: rgb(41, 42, 58);
+        font-family: "FiraCode Nerd Font Mono";
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 8px;
+}
+.power-menu-popup .button.hover {
+        background-color: rgb(55, 56, 75);
+        border: 1px solid rgb(55, 56, 75);
+}
+.power-menu-popup .button .label {
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.95);
+        font-family: "FiraCode Nerd Font Mono";
+}
+.power-menu-popup .button .icon {
+        font-size: 48px;
+        padding-top: 8px;
+        color: rgba(255, 255, 255, 0.25);
+}
+.power-menu-popup .button.cancel .icon {
+        color: rgba(243, 139, 168, 0.55);
+}
+.power-menu-popup .button.cancel .label {
+        color: rgba(243, 139, 168, 0.95);
+}
+.power-menu-popup .button.shutdown .icon {
+        color: rgba(137, 180, 250, 0.55);
+}
+.power-menu-popup .button.shutdown .label {
+        color: rgba(137, 180, 250, 0.95);
+}
+
+/* ICONS */
+.icon {
+        font-size: 16px;
+    margin-right:4px;
+}
+
+.memory-widget .icon {
+        font-size: 14px;
+        color: #9ca3af;
+}
+
+.memory-widget {
+    border-bottom: 1px solid rgba(255, 60, 90, 0.25);
+}
+.memory-widget .label {
+    color: #9ca3af;
+}
+.volume-widget {
+    border-bottom: 1px solid rgba(255, 60, 90, 0.25);
+    background-color: rgba(137, 180, 250, 0);
+}
+.volume-widget .icon {
+        color: #9ca3af;
+}
+.volume-widget .label {
+        color: #9ca3af;
+}
+.taskbar-widget .app-icon{
+    padding:0 6px;
+    border: none;
+    margin: 0;
+}
+.power-menu-widget {
+    background-color: rgba(243, 139, 168, 0);
+}
+.clock-widget {
+    background-color: #e2d3c2;
+    border: 1px solid rgba(255, 60, 90, 0.2);
+    color: #111;
+    border-radius: 10px;
+    margin-top: 3;
+    margin-bottom: 3;
+}
+
+.clock-widget .label {
+        color: #000000;
+}
+
+.clock-widget .icon {
+        color: #000000;
+}
+/* NEW MEDIA WIDGET */
+.media-widget {
+        padding-left: 20px;
+        margin: 0;
+    border-radius: 0;
+    max-width: 260px;
+}
+
+.media-widget .label {
+        color: #9ca3af;
+        padding: 0 4px;
+        font-size: 11px;
+    min-width: 0;
+}
+.media-widget .btn {
+        color: #9ca3af;
+        padding: 0 3px;
+        margin: 4px 0;
+        font-family: Segoe Fluent Icons;
+}
+.media-widget .btn:hover {
+        color: #9ca3af;
+}
+.media-widget .btn.play {
+        background-color: #313244;
+        font-size: 16px;
+}
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+        color: #4e525c;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, 0);
+}
+
+.komorebi-active-layout {
+    background-color: rgba(166, 227, 161, 0);
+}
+
+.komorebi-active-layout .label {
+    color: #e63946;
+}
