@@ -13,7 +13,7 @@ $links = @{
     "$DOTFILES\starship\starship.toml"      = "$HOME\.config\starship.toml"
     "$DOTFILES\yasb\config.yaml"            = "$HOME\.config\yasb\config.yaml"
     "$DOTFILES\yasb\styles.css"             = "$HOME\.config\yasb\styles.css"
-    "$DOTFILES\whkdrc\whkdrc"             = "$HOME\.config\whkdrc"
+    "$DOTFILES\whkdrc\whkdrc"               = "$HOME\.config\whkdrc"
 }
 
 Write-Host "Starting Symlink process..." -ForegroundColor Cyan
@@ -41,8 +41,10 @@ $links.GetEnumerator() | ForEach-Object {
 
 Write-Host "Setup Complete!" -ForegroundColor Magenta
 echo "Starting komorebic, yasb"
-komorebic start --whkd
-yasb
+
+Start-Process komorebic -ArgumentList "start --whkd" -WindowStyle Hidden
+Start-Process yasb -WindowStyle Hidden
+
 $profileCode = @"
 
 # --- Added by Dotfiles Install Script ---
@@ -82,6 +84,7 @@ $yasbSettings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopI
 Register-ScheduledTask -TaskName "YASBStartup" -Action $yasbAction -Trigger $yasbTrigger -Settings $yasbSettings -Force
 
 Write-Host "Startup tasks scheduled successfully!" -ForegroundColor Green
-echo "Ending script"
-
+komorebic reload-configuration
+taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden
 . $profile
+echo "Ending script"
