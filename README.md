@@ -1,0 +1,1 @@
+The dotfiles for YASB, Komorebic and Starship, it comes with a installation file , just run it in powershell and it will clone said file, install YASB, Komorebi, Starship - configure thier dotfiles and schedule them to open on startup for hassle free use.
